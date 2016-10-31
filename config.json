@@ -1,0 +1,36 @@
+{
+  "options": {
+    "paths": {
+      "root": "",
+      "fonts": "mapbox-gl-styles/glyphs",
+      "sprites": "mapbox-gl-styles/sprites",
+      "styles": "mapbox-gl-styles/styles",
+      "mbtiles": ""
+    },
+    "domains": [
+      "localhost:8080",
+      "127.0.0.1:8080"
+    ],
+    "formatQuality": {
+      "jpeg": 80,
+      "webp": 90,
+      "pngQuantization": false,
+      "png": 90
+    },
+    "maxSize": 2048
+  },
+  "styles": {
+    "bright": {
+      "style": "bright-v9.json",
+      "tilejson": {
+        "type": "overlay",
+        "bounds": [8.44806, 47.32023, 8.62537, 47.43468]
+      }
+    }
+  },
+  "data": {
+    "world": {
+      "mbtiles": "world.mbtiles"
+    }
+  }
+}
