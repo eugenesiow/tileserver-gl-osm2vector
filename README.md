@@ -19,8 +19,8 @@ Or your own city, like:
 ### Setup the environment with Docker
 
 1. Clone this repository `git clone https://github.com/eugenesiow/tileserver-gl-osm2vector`
-2. Put your `.mbtiles` file into the folder `tileserver-gl-osm2vector`.
-3. Install [https://docs.docker.com/engine/installation/](docker).
+2. Put your `.mbtiles` file into the root folder of the directory produced by git, `tileserver-gl-osm2vector`.
+3. Install [Docker](https://docs.docker.com/engine/installation/).
 4. Modify `config.json` by changing `world.mbtiles` to the `.mbtiles` file you obtained from the previous section. For example, if you had downloaded the Southampton map, change:
 
         "world": {
@@ -38,7 +38,6 @@ to
             "url": "http://localhost:8080/data/world.json",
             "type": "vector"
         }
-
 to
 
         "mapbox": {
