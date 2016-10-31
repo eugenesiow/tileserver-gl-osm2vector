@@ -22,23 +22,30 @@ Or your own city, like:
 2. Put your `.mbtiles` file into the folder `tileserver-gl-osm2vector`.
 3. Install [https://docs.docker.com/engine/installation/](docker).
 4. Modify `config.json` by changing `world.mbtiles` to the `.mbtiles` file you obtained from the previous section. For example, if you had downloaded the Southampton map, change:
+
         "world": {
             "mbtiles": "world.mbtiles"
-        }
+        }        
 to
+        
         "southampton": {
             "mbtiles": "southampton_england.mbtiles"
         }
+        
 5. Modify `/mapbox-gl-styles/styles/bright-v9.json` by changing `http://localhost:8080/data/world.json` to the name of your map. For example, if in the previous step you've changed `world` to `southampton`, change:
+
         "mapbox": {
             "url": "http://localhost:8080/data/world.json",
             "type": "vector"
         }
+
 to
+
         "mapbox": {
             "url": "http://localhost:8080/data/southampton.json",
             "type": "vector"
         }
+        
 6. Run docker `docker run -it -v $(pwd):/data -p 8080:80 klokantech/tileserver-gl` in the directory (the `tileserver-gl-osm2vector` directory).
 
 ### Copyright
